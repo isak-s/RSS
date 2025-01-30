@@ -1,15 +1,30 @@
-/* General Styles */
+:root {
+    --yellow: #fcfca9;
+    --primary-black: #2a3439;
+    --secondary-black: #3d474c;
+    --link-blue: #4a708b;
+ }
+
+a {
+    color: var(--link-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3b5a6b;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--primary-black) !important;
+    color: var(--yellow);
     margin: 0;
     padding: 0;
 }
 
 header {
     background-color: #333;
-    color: #fff;
+    color: var(--yellow);
     padding: 15px 0;
     text-align: center;
 }
@@ -35,7 +50,7 @@ header input[type="text"] {
 header button {
     padding: 10px 15px;
     font-size: 1em;
-    background-color: #007BFF;
+    background-color: var(--link-blue) !important;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -43,7 +58,7 @@ header button {
 }
 
 header button:hover {
-    background-color: #0056b3;
+    background-color: #4a708b;
 }
 
 .articles {
@@ -53,7 +68,7 @@ header button:hover {
 }
 
 article {
-    background-color: #fff;
+    background-color: var(--secondary-black);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
