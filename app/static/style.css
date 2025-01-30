@@ -3,7 +3,12 @@
     --primary-black: #2a3439;
     --secondary-black: #3d474c;
     --link-blue: #4a708b;
- }
+}
+
+input {
+    background-color: var(--secondary-black) !important;
+    color: var(--yellow);
+}
 
 a {
     color: var(--link-blue);
@@ -11,6 +16,47 @@ a {
 }
 
 a:hover {
+    color: #3b5a6b;
+}
+
+.pagination {
+    text-align: center; /* Ensure buttons are centered */
+    margin: 20px 0;
+}
+
+button,
+.pagination a {
+    background-color: var(--link-blue) !important;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+button:hover,
+.pagination a:hover {
+    background-color: #3b5a6b !important;
+}
+
+.pagination a:disabled,
+.pagination a.disabled {
+    background-color: #ddd;
+    color: #666;
+    pointer-events: none;
+}
+
+article h2 a {
+    color: var(--link-blue);
+    text-decoration: none;
+}
+
+article h2 a:hover {
+    text-decoration: underline;
     color: #3b5a6b;
 }
 
@@ -47,20 +93,6 @@ header input[type="text"] {
     border-radius: 4px;
 }
 
-header button {
-    padding: 10px 15px;
-    font-size: 1em;
-    background-color: var(--link-blue) !important;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-header button:hover {
-    background-color: #4a708b;
-}
-
 .articles {
     margin: 20px auto;
     padding: 0 20px;
@@ -78,44 +110,4 @@ article {
 article h2 {
     margin-top: 0;
     font-size: 1.5em;
-}
-
-article h2 a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-article h2 a:hover {
-    text-decoration: underline;
-}
-
-article p {
-    margin: 10px 0;
-    line-height: 1.6em;
-}
-
-.pagination {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.pagination a {
-    padding: 10px 20px;
-    margin: 0 5px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    display: inline-block;
-}
-
-.pagination a:hover {
-    background-color: #0056b3;
-}
-
-.pagination a:disabled,
-.pagination a.disabled {
-    background-color: #ddd;
-    color: #666;
-    pointer-events: none;
 }
