@@ -8,6 +8,7 @@ RSS_FEEDS = {
     'Hacker News': 'https://news.ycombinator.com/rss',
     # 'Wall Street Journal': 'https://feeds.a.dj.com/rss/RSSMarketsMain.xml',
     # 'CNBC': 'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839069'
+    'AftonBladet': 'https://rss.aftonbladet.se/rss2/small/pages/sections/senastenytt/'
 }
 
 main = Blueprint('main', __name__)
