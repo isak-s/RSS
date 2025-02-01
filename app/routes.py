@@ -5,7 +5,7 @@ from flask import render_template, request, Blueprint
 
 RSS_FEEDS = {
     # 'Yahoo Finance': 'https://finance.yahoo.com/news/rssindex',
-    'Hacker News': 'https://news.ycombinator.com/rss',
+    'Hacker News': 'https://hnrss.org/frontpage',
     # 'Wall Street Journal': 'https://feeds.a.dj.com/rss/RSSMarketsMain.xml',
     # 'CNBC': 'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839069'
     # 'AftonBladet': 'https://rss.aftonbladet.se/rss2/small/pages/sections/senastenytt/',
